@@ -16,7 +16,7 @@ void UMenu::MenuSetup(int32 MaxPlayers, FString TypeOfmatch, FString LobbyPath)
 
 	AddToViewport();
 	SetVisibility(ESlateVisibility::Visible);
-	bIsFocusable = true;
+	SetIsFocusable(true);
 
 	UWorld* World = GetWorld();
 	if (World)
